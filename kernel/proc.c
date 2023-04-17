@@ -434,7 +434,7 @@ wait(uint64 addr)
   }
 }
 
-// Per-CPU process scheduler.
+// Per-CPU process scheduler.  when it is changed out, it also saved to mycpu()->context for next round swtch
 // Each CPU calls scheduler() after setting itself up.
 // Scheduler never returns.  It loops, doing:
 //  - choose a process to run.

@@ -1,7 +1,7 @@
 # Context switch
 #
 #   void swtch(struct context *old, struct context *new);
-# 
+#               (a0, a1 is is register which contains a pointer to argument)
 # Save current registers in old. Load from new.	
 
 
